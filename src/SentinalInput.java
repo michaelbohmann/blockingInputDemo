@@ -25,13 +25,19 @@ public class SentinalInput
                 }
                 elseif(grade >=0 && grade <= 100)
                 {
-                    totalGrades += grade
+                    totalGrades += grade:
+                    numGrades++;
                 }
-                System.out.println("You said your age is " + age);
-            } else {
+            }
+            else
+            {
                 trash = in.nextLine();
                 System.out.println("You entered " + trash);
             }
         }while(!doneGrade);
+
+        //calculate the average
+        average = totalGrades / numGrades;
+        System.out.println("Your average grade is " + average);
     }
 }
