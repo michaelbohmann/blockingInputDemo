@@ -40,8 +40,16 @@ public class SentinalInput
             }
         }while(!doneGrade);
 
-        //calculate the average
-        average = totalGrades / numGrades;
-        System.out.println("The average grade of " + numGrades + "  grades is " + average);
+        if(numGrades >0)
+        {
+            //calculate the average
+            average = totalGrades / numGrades;
+            System.out.println("The average grade of " + numGrades + "  grades is " + average);
+        }
+        else
+        {
+            System.out.println("Must enter a grade");
+        }
+
     }
 }
