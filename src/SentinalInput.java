@@ -23,10 +23,14 @@ public class SentinalInput
                 {
                     doneGrade = true;
                 }
-                elseif(grade >=0 && grade <= 100)
+                else if(grade >=0 && grade <= 100)
                 {
-                    totalGrades += grade:
+                    totalGrades += grade;
                     numGrades++;
+                }
+                else
+                {
+                    System.out.println("Must be [0-100] not: " + grade);
                 }
             }
             else
@@ -38,6 +42,6 @@ public class SentinalInput
 
         //calculate the average
         average = totalGrades / numGrades;
-        System.out.println("Your average grade is " + average);
+        System.out.println("The average grade of " + numGrades + "  grades is " + average);
     }
 }
