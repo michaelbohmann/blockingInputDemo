@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class SentinalInput
 {
-    public static void main(String args[])
+    public static void  main(String args[])
     {
         Scanner in = new Scanner(System.in);
         double grade = 0; // 0-100 -1 to quit
