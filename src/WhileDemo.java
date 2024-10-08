@@ -16,6 +16,8 @@ public class WhileDemo
             die2 = gen.nextInt(6) + 1;
 
             dieRoll = die1 + die2;
+
+            System.out.printf("%3d,");
         }
     }
 
